@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<p>hello world</p>
-<img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Dream_icon.svg/1200px-Dream_icon.svg.png" alt="Failed to Load Image">
-
-</body>
+  <body>
+    <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2020/08/hello-world.png" alt="Failed to Load Image" width="270" height="152" style="float:left;">
+    <script src="script.js"></script>
+    <body  bgcolor="black">   
+  </body>
+   <head>
+     <script> 
+      var customerName = prompt("Please enter your name", "");
+      if (customerName!= null) {
+      document.getElementById("username").value = customerName;}
+    </script>
+  </head>
 </html>
