@@ -3,7 +3,7 @@
   <body>
     <img src="IMG_8977.jpeg" alt="Failed to Load Image" width="270" height="152" style="float:left;">
     <script src="script.js"></script>
-    <body  bgcolor="black">   
+    <body  bgcolor="000000">   
   </body>
   <br>
   <p style="color:white" "font-family:Monospace">"what is your name?"</p>
