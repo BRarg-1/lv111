@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<form name="NAMETEXT">
-  <p style="color:red"> what is your name?</p>
-  <input type="text" required>
-  <button type="submit">submit</button>
+<html>
+  <body>
+    <img src="greenlight.jpeg" alt="Failed to Load Image" width="270" height="152" style="float:left;">
+    <script src="script.js"></script>
+    <body  bgcolor="black">   
+  </body>
+  <br>
+  <p style="color:white" "font-family:Monospace">"what is your name?"</p>
+<form action="/my-handling-form-page" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="user_name">
 </form>
-
-<script>
-  const scriptURL = '<https://script.google.com/macros/s/AKfycbzGlypc0nHcLH8eg63kRPkEU541_i1E6XVfkk-4NTNEhSFxvtrTnX5fJZMvXJafB2iYBQ/exec>'
-  const form = document.forms['NAMETEXT']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+  </form> 
 </html>
