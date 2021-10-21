@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<form name="submit-to-google-sheet">
+<form name="NAMETEXT">
   <p style="color:red"> what is your name?</p>
   <input type="text" required>
   <button type="submit">submit</button>
@@ -7,7 +7,7 @@
 
 <script>
   const scriptURL = '<https://script.google.com/macros/s/AKfycbzGlypc0nHcLH8eg63kRPkEU541_i1E6XVfkk-4NTNEhSFxvtrTnX5fJZMvXJafB2iYBQ/exec>'
-  const form = document.forms['submit-to-google-sheet']
+  const form = document.forms['NAMETEXT']
 
   form.addEventListener('submit', e => {
     e.preventDefault()
