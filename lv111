@@ -1,8 +1,19 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2020/08/hello-world.png" alt="Failed to Load Image" width="270" height="152" style="float:left;">
-    <script src="script.js"></script>
-    <body  bgcolor="black">   
-  </body>
+<form name="submit-to-google-sheet">
+  <p style="color:red"> what is your name?</p>
+  <input type="text" required>
+  <button type="submit">submit</button>
+</form>
+
+<script>
+  const scriptURL = '<https://script.google.com/macros/s/AKfycbzGlypc0nHcLH8eg63kRPkEU541_i1E6XVfkk-4NTNEhSFxvtrTnX5fJZMvXJafB2iYBQ/exec>'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </html>
