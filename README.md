@@ -6,10 +6,9 @@
     <body  bgcolor="000000">   
   </body>
   <br>
-  <p style="color:white" "font-family:Monospace">"what is your name?"</p>
+  <p>what is your name?</p>
 <form action="/my-handling-form-page" method="post">
     <label for="name">Name</label>
     <input type="text" id="name" name="user_name">
 </form>
-  </form> 
 </html>
