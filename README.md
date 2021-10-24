@@ -8,7 +8,6 @@
   <br>
   <p>what is your name?</p>
 <form action="/my-handling-form-page" method="post">
-    <label for="name">Name</label>
+    <label for="name"></label>
     <input type="text" id="name" name="user_name">
 </form>
-</html>
